@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+:host {
+  display: block;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.store {
+  min-height: 100vh;
+  background: #f7f7f5;
+  color: #111;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 72px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar nav a {
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-actions button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* Hero */
+
+.hero {
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+  background: #dedbd3;
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(60px, 8vw, 110px);
+  line-height: 0.9;
+  letter-spacing: -5px;
+  margin: 0 0 30px;
+  font-weight: 800;
+}
+
+.hero-text {
+  max-width: 420px;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.shop-button {
+  padding: 15px 28px;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Products */
+
+.products {
+  padding: 90px 6%;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 42px;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  cursor: pointer;
+}
+
+.product-image {
+  height: 430px;
+  background: #e3e1dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.product-image span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #777;
+}
+
+.product-card h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.product-card p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .navbar nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 60px 25px;
+  }
+
+  .hero h1 {
+    font-size: 64px;
+  }
+
+  .products {
+    padding: 60px 25px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-image {
+    height: 400px;
+  }
+}

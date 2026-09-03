@@ -1,0 +1,23 @@
+# Angular
+frontend/node_modules/
+frontend/.angular/
+frontend/dist/
+frontend/.cache/
+
+# Environment files
+.env
+.env.*
+
+# Python
+backend/venv/
+backend/__pycache__/
+backend/**/*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

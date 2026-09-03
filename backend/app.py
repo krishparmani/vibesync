@@ -20,21 +20,21 @@ def music():
             "id": 1,
             "title": "Midnight House",
             "artist": "VibeSync Radio",
-            "cover": "images/midnight-house.jpg",
+            "cover": "http://127.0.0.1:5000/media/images/midnight-house.jpg",
             "audio": "audio/midnight-house.mp3"
         },
         {
             "id": 2,
             "title": "After Hours",
             "artist": "VibeSync Radio",
-            "cover": "images/after-hours.jpg",
+            "cover": "http://127.0.0.1:5000/media/images/after-hours.jpg",
             "audio": "audio/after-hours.mp3"
         },
         {
             "id": 3,
             "title": "City Lights",
             "artist": "VibeSync Radio",
-            "cover": "images/city-lights.jpg",
+            "cover": "http://127.0.0.1:5000/media/images/city-lights.jpg",
             "audio": "audio/city-lights.mp3"
         }
     ]

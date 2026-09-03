@@ -1,7 +1,9 @@
 <div class="music-player">
 
   <div class="album-art" [class.playing]="isPlaying">
-    <div class="vinyl">♫</div>
+    <img
+      [src]="coverUrl"
+      [alt]="trackTitle + ' album artwork'">
   </div>
 
   <div class="track-info">
@@ -50,7 +52,8 @@
   <audio
     #audioPlayer
     (play)="isPlaying = true"
-    (pause)="isPlaying = false">
+    (pause)="isPlaying = false"
+    (ended)="nextTrack()">
   </audio>
 
 </div>
